@@ -33,7 +33,7 @@ const Root = ({ teams, seasonD1, seasonD2 }) => {
         <title>Chilean teams app</title>
       </Head>
       <Container flexDirection="column">
-        <Title color="#fff" fontSize="50px" fontWeight="700">
+        <Title color="#fff" fontSize="50px" fontWeight="700" rFontSize="30px">
           Chilean football teams statistics
         </Title>
       </Container>
@@ -56,6 +56,7 @@ const Root = ({ teams, seasonD1, seasonD2 }) => {
                       width="250px"
                       boxShadow="1px 0px 80px rgba(200, 200, 200, 0.3)"
                       transform="translateY(-1px);"
+                      rWidth="150px"
                     >
                       <Image
                         src={team.logo}

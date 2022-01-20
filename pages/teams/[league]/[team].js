@@ -28,24 +28,24 @@ const Team = ({ leagueData, teamStatistics, teamData }) => {
       </div>
       <div>
         <Container flexDirection="column">
-          <Card margin="5px 0px">
+          <Card margin="5px 0px" rWidth="250px">
             <Image
               src={teamData.logo}
               alt={`${teamData.name} logo`}
               width="130px"
               height="130px"
             />
-            <Title color="#fff" fontSize="30px" fontWeight="700">
+            <Title color="#fff" fontSize="30px" fontWeight="700" rFontSize="20px">
               {teamData.name}
             </Title>
-            <SubTitle color="#fff" fontSize="25px" fontWeight="700">
+            <SubTitle color="#fff" fontSize="25px" fontWeight="700" rFontSize="16px">
               {leagueData == "741"
                 ? "Primera División"
                 : leagueData == "742"
                 ? "Primera B"
                 : "N/A"}
             </SubTitle>
-            <P color="#fff" fontSize="20px" fontWeight="700">
+            <P color="#fff" fontSize="20px" fontWeight="700" rFontSize="14px">
               Position: {teamStatistics.position}
             </P>
           </Card>
@@ -53,7 +53,7 @@ const Team = ({ leagueData, teamStatistics, teamData }) => {
       </div>
       <div>
         <Container flexDirection="column">
-          <SubTitle color="#fff" fontSize="30px" fontWeight="600">
+          <SubTitle color="#fff" fontSize="30px" fontWeight="600" rFontSize="20px">
             Overall
           </SubTitle>
           <Table
@@ -64,13 +64,13 @@ const Team = ({ leagueData, teamStatistics, teamData }) => {
           />
         </Container>
         <Container flexDirection="column">
-          <SubTitle color="#fff" fontSize="30px" fontWeight="600">
+          <SubTitle color="#fff" fontSize="30px" fontWeight="600" rFontSize="20px">
             Home
           </SubTitle>
           <Table rows={getSeasonData([teamStatistics.home], homePoints)} />
         </Container>
         <Container flexDirection="column">
-          <SubTitle color="#fff" fontSize="30px" fontWeight="600">
+          <SubTitle color="#fff" fontSize="30px" fontWeight="600" rFontSize="20px">
             Away
           </SubTitle>
           <Table rows={getSeasonData([teamStatistics.away], awayPoints)} />

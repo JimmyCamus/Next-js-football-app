@@ -19,6 +19,15 @@ const MyTable = styled.table`
   th {
     background-color: #474747;
   }
+
+  td {
+    width: 1px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 8px;
+    font-weight: 700;
+  }
 `;
 
 export default MyTable;
